@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/btnBack"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:text="‹"
+                android:textSize="36sp"
+                android:textColor="#002147"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forms &amp; Brochures"
+                    android:textColor="#002147"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Industrial training documents and resources"
+                    android:textColor="#777777"
+                    android:textSize="13sp"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- Search -->
+        <EditText
+            android:id="@+id/etSearchDocuments"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_document_search"
+            android:hint="Search documents..."
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:textSize="14sp"
+            android:singleLine="true"/>
+
+
+        <!-- Section Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Document Categories"
+            android:textColor="#002147"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="12dp"/>
+
+
+        <!-- GENERAL INFORMATION -->
+        <LinearLayout
+            android:id="@+id/cardGeneral"
+            style="@style/DocumentCategoryCard">
+
+            <TextView
+                style="@style/DocumentCategoryIcon"
+                android:text="📚"/>
+
+            <LinearLayout
+                style="@style/DocumentCategoryTextContainer">
+
+                <TextView
+                    style="@style/DocumentCategoryTitle"
+                    android:text="General Information"/>
+
+                <TextView
+                    style="@style/DocumentCategoryDescription"
+                    android:text="Handbook, course information, flow chart and calendar"/>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/DocumentArrow"
+                android:text="›"/>
+
+        </LinearLayout>
+
+
+        <!-- BRIEFING MATERIALS -->
+        <LinearLayout
+            android:id="@+id/cardBriefing"
+            style="@style/DocumentCategoryCard">
+
+            <TextView
+                style="@style/DocumentCategoryIcon"
+                android:text="🎥"/>
+
+            <LinearLayout
+                style="@style/DocumentCategoryTextContainer">
+
+                <TextView
+                    style="@style/DocumentCategoryTitle"
+                    android:text="Briefing Materials"/>
+
+                <TextView
+                    style="@style/DocumentCategoryDescription"
+                    android:text="Briefing slides and recorded briefing sessions"/>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/DocumentArrow"
+                android:text="›"/>
+
+        </LinearLayout>
+
+
+        <!-- PLACEMENT DOCUMENTS -->
+        <LinearLayout
+            android:id="@+id/cardPlacement"
+            style="@style/DocumentCategoryCard">
+
+            <TextView
+                style="@style/DocumentCategoryIcon"
+                android:text="📄"/>
+
+            <LinearLayout
+                style="@style/DocumentCategoryTextContainer">
+
+                <TextView
+                    style="@style/DocumentCategoryTitle"
+                    android:text="Placement Documents"/>
+
+                <TextView
+                    style="@style/DocumentCategoryDescription"
+                    android:text="Placement letters, confirmation letters and reply forms"/>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/DocumentArrow"
+                android:text="›"/>
+
+        </LinearLayout>
+
+
+        <!-- INSURANCE & LEGAL -->
+        <LinearLayout
+            android:id="@+id/cardInsurance"
+            style="@style/DocumentCategoryCard">
+
+            <TextView
+                style="@style/DocumentCategoryIcon"
+                android:text="🛡"/>
+
+            <LinearLayout
+                style="@style/DocumentCategoryTextContainer">
+
+                <TextView
+                    style="@style/DocumentCategoryTitle"
+                    android:text="Insurance &amp; Legal"/>
+
+                <TextView
+                    style="@style/DocumentCategoryDescription"
+                    android:text="Insurance coverage and non-disclosure agreement"/>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/DocumentArrow"
+                android:text="›"/>
+
+        </LinearLayout>
+
+
+        <!-- REPORTING & ASSESSMENT -->
+        <LinearLayout
+            android:id="@+id/cardReporting"
+            style="@style/DocumentCategoryCard">
+
+            <TextView
+                style="@style/DocumentCategoryIcon"
+                android:text="📝"/>
+
+            <LinearLayout
+                style="@style/DocumentCategoryTextContainer">
+
+                <TextView
+                    style="@style/DocumentCategoryTitle"
+                    android:text="Reporting &amp; Assessment"/>
+
+                <TextView
+                    style="@style/DocumentCategoryDescription"
+                    android:text="RDN, logbook, final report and assessment forms"/>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/DocumentArrow"
+                android:text="›"/>
+
+        </LinearLayout>
+
+
+        <!-- SAMPLE DOCUMENTS -->
+        <LinearLayout
+            android:id="@+id/cardSamples"
+            style="@style/DocumentCategoryCard">
+
+            <TextView
+                style="@style/DocumentCategoryIcon"
+                android:text="⭐"/>
+
+            <LinearLayout
+                style="@style/DocumentCategoryTextContainer">
+
+                <TextView
+                    style="@style/DocumentCategoryTitle"
+                    android:text="Sample Documents"/>
+
+                <TextView
+                    style="@style/DocumentCategoryDescription"
+                    android:text="Sample logbook, final report and presentation materials"/>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/DocumentArrow"
+                android:text="›"/>
+
+        </LinearLayout>
+
+
+        <!-- Tip -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_document_tip"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="💡"
+                android:textSize="22sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Check the documents regularly for the latest industrial training information."
+                android:textColor="#002147"
+                android:textSize="13sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

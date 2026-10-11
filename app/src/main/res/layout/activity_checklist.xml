@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F5FF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="24dp">
+
+
+        <!-- ================= TOP BAR ================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="‹"
+                android:textColor="#17134F"
+                android:textSize="34sp"
+                android:gravity="center"
+                android:fontFamily="sans"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+
+        <!-- ================= TITLE ================= -->
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preparation Checklist"
+            android:textColor="#17134F"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp" />
+
+
+        <!-- ================= SUBTITLE ================= -->
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Track your progress before internship"
+            android:textColor="#625E78"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="14dp" />
+
+
+        <!-- ================= PROGRESS ================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ProgressBar
+                android:id="@+id/progressChecklist"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="9dp"
+                android:layout_weight="1"
+                android:max="8"
+                android:progress="4"
+                android:progressDrawable="@drawable/bg_progress" />
+
+            <TextView
+                android:id="@+id/tvProgress"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="4/8 completed"
+                android:textColor="#40366A"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:layout_marginStart="10dp" />
+
+        </LinearLayout>
+
+
+        <!-- ================= CHECKLIST CARD ================= -->
+
+        <LinearLayout
+            android:id="@+id/checklistContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_checklist_card"
+            android:layout_marginTop="10dp">
+
+
+            <!-- ITEM 1 -->
+
+            <CheckBox
+                android:id="@+id/checkResume"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Prepare resume"
+                android:textColor="#29234C"
+                android:textSize="12sp"
+                android:buttonTint="@color/checkbox_tint"
+                android:paddingStart="4dp"
+                android:paddingEnd="10dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEAF5" />
+
+
+            <!-- ITEM 2 -->
+
+            <CheckBox
+                android:id="@+id/checkCoverLetter"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Prepare cover letter"
+                android:textColor="#29234C"
+                android:textSize="12sp"
+                android:buttonTint="@color/checkbox_tint"
+                android:paddingStart="4dp"
+                android:paddingEnd="10dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEAF5" />
+
+
+            <!-- ITEM 3 -->
+
+            <CheckBox
+                android:id="@+id/checkDocuments"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Prepare required documents"
+                android:textColor="#29234C"
+                android:textSize="12sp"
+                android:buttonTint="@color/checkbox_tint"
+                android:paddingStart="4dp"
+                android:paddingEnd="10dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEAF5" />
+
+
+            <!-- ITEM 4 -->
+
+            <CheckBox
+                android:id="@+id/checkResearch"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Research companies"
+                android:textColor="#29234C"
+                android:textSize="12sp"
+                android:buttonTint="@color/checkbox_tint"
+                android:paddingStart="4dp"
+                android:paddingEnd="10dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEAF5" />
+
+
+            <!-- ITEM 5 -->
+
+            <CheckBox
+                android:id="@+id/checkApply"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Apply for internship"
+                android:textColor="#29234C"
+                android:textSize="12sp"
+                android:buttonTint="@color/checkbox_tint"
+                android:paddingStart="4dp"
+                android:paddingEnd="10dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEAF5" />
+
+
+            <!-- ITEM 6 -->
+
+            <CheckBox
+                android:id="@+id/checkInterview"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Prepare for interview"
+                android:textColor="#29234C"
+                android:textSize="12sp"
+                android:buttonTint="@color/checkbox_tint"
+                android:paddingStart="4dp"
+                android:paddingEnd="10dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEAF5" />
+
+
+            <!-- ITEM 7 -->
+
+            <CheckBox
+                android:id="@+id/checkAttend"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Attend interview"
+                android:textColor="#29234C"
+                android:textSize="12sp"
+                android:buttonTint="@color/checkbox_tint"
+                android:paddingStart="4dp"
+                android:paddingEnd="10dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEAF5" />
+
+
+            <!-- ITEM 8 -->
+
+            <CheckBox
+                android:id="@+id/checkPlacement"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Confirm placement"
+                android:textColor="#29234C"
+                android:textSize="12sp"
+                android:buttonTint="@color/checkbox_tint"
+                android:paddingStart="4dp"
+                android:paddingEnd="10dp" />
+
+        </LinearLayout>
+
+
+        <!-- ================= TIP CARD ================= -->
+
+        <LinearLayout
+            android:id="@+id/tipCard"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_tip"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp">
+
+            <TextView
+                android:layout_width="42dp"
+                android:layout_height="match_parent"
+                android:text="💡"
+                android:textSize="25sp"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tip"
+                    android:textColor="#43237F"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stay consistent and complete all tasks before your internship!"
+                    android:textColor="#625E78"
+                    android:textSize="10sp"
+                    android:layout_marginTop="3dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

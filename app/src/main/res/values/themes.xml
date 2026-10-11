@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="Theme.InternshipPreparation"
+        parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:fontFamily">sans</item>
+
+        <!-- Main accent color -->
+        <item name="android:colorAccent">#ED1C24</item>
+
+        <!-- Navigation bar -->
+        <item name="android:navigationBarColor">#FFFFFF</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">#002147</item>
+
+        <!-- Light status bar icons -->
+        <item name="android:windowLightStatusBar">false</item>
+
+    </style>
+
+</resources>

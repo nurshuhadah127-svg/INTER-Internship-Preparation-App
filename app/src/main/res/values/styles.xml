@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- ===================================== -->
+    <!-- Dashboard Small Card -->
+    <!-- ===================================== -->
+
+    <style name="DashboardSmallCard">
+
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">105dp</item>
+        <item name="android:layout_weight">1</item>
+
+        <item name="android:background">
+            @drawable/bg_dashboard_card
+        </item>
+
+        <item name="android:gravity">center</item>
+
+        <item name="android:orientation">vertical</item>
+
+        <item name="android:padding">8dp</item>
+
+    </style>
+
+
+    <!-- ===================================== -->
+    <!-- Bottom Navigation Item -->
+    <!-- ===================================== -->
+
+    <style name="BottomNavItem">
+
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+
+        <item name="android:layout_weight">1</item>
+
+        <item name="android:gravity">center</item>
+
+        <item name="android:orientation">vertical</item>
+
+    </style>
+
+
+    <!-- ===================================== -->
+    <!-- Document Category Card -->
+    <!-- ===================================== -->
+
+    <style name="DocumentCategoryCard">
+
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="android:layout_height">92dp</item>
+
+        <item name="android:layout_marginBottom">12dp</item>
+
+        <item name="android:background">
+            @drawable/bg_document_card
+        </item>
+
+        <item name="android:gravity">center_vertical</item>
+
+        <item name="android:orientation">horizontal</item>
+
+        <item name="android:padding">12dp</item>
+
+        <item name="android:clickable">true</item>
+
+        <item name="android:focusable">true</item>
+
+    </style>
+
+
+    <!-- ===================================== -->
+    <!-- Document Category Icon -->
+    <!-- ===================================== -->
+
+    <style name="DocumentCategoryIcon">
+
+        <item name="android:layout_width">55dp</item>
+
+        <item name="android:layout_height">55dp</item>
+
+        <item name="android:background">
+            @drawable/bg_document_icon
+        </item>
+
+        <item name="android:gravity">center</item>
+
+        <item name="android:textSize">25sp</item>
+
+    </style>
+
+
+    <!-- ===================================== -->
+    <!-- Document Text Container -->
+    <!-- ===================================== -->
+
+    <style name="DocumentCategoryTextContainer">
+
+        <item name="android:layout_width">0dp</item>
+
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:layout_weight">1</item>
+
+        <item name="android:orientation">vertical</item>
+
+        <item name="android:layout_marginStart">13dp</item>
+
+    </style>
+
+
+    <!-- ===================================== -->
+    <!-- Document Category Title -->
+    <!-- ===================================== -->
+
+    <style name="DocumentCategoryTitle">
+
+        <item name="android:layout_width">wrap_content</item>
+
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:textColor">#002147</item>
+
+        <item name="android:textSize">16sp</item>
+
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+
+    <!-- ===================================== -->
+    <!-- Document Category Description -->
+    <!-- ===================================== -->
+
+    <style name="DocumentCategoryDescription">
+
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:textColor">#777777</item>
+
+        <item name="android:textSize">11sp</item>
+
+        <item name="android:maxLines">2</item>
+
+        <item name="android:ellipsize">end</item>
+
+        <item name="android:layout_marginTop">3dp</item>
+
+    </style>
+
+
+    <!-- ===================================== -->
+    <!-- Document Arrow -->
+    <!-- ===================================== -->
+
+    <style name="DocumentArrow">
+
+        <item name="android:layout_width">35dp</item>
+
+        <item name="android:layout_height">match_parent</item>
+
+        <item name="android:gravity">center</item>
+
+        <item name="android:textColor">#ED1C24</item>
+
+        <item name="android:textSize">32sp</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F5FF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Back Button -->
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="‹"
+            android:textColor="#6C4AB6"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Required Documents"
+            android:textColor="#2E2345"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Prepare all documents needed for your internship"
+            android:textColor="#777080"
+            android:textSize="15sp" />
+
+        <!-- Document Card 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_content_card">
+
+            <TextView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:gravity="center"
+                android:text="📄"
+                android:textSize="28sp"
+                android:background="@drawable/bg_icon_box" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Resume / CV"
+                    android:textColor="#2E2345"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Updated resume prepared for internship applications."
+                    android:textColor="#777080"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkResume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/checkbox_tint" />
+
+        </LinearLayout>
+
+        <!-- Document Card 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_content_card">
+
+            <TextView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:gravity="center"
+                android:text="✉"
+                android:textColor="#6C4AB6"
+                android:textSize="28sp"
+                android:background="@drawable/bg_icon_box" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cover Letter"
+                    android:textColor="#2E2345"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Prepare a suitable cover letter for your application."
+                    android:textColor="#777080"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkCoverLetter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/checkbox_tint" />
+
+        </LinearLayout>
+
+        <!-- Document Card 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_content_card">
+
+            <TextView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:gravity="center"
+                android:text="🎓"
+                android:textSize="27sp"
+                android:background="@drawable/bg_icon_box" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="University Documents"
+                    android:textColor="#2E2345"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Prepare documents required by the university."
+                    android:textColor="#777080"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkUniversity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/checkbox_tint" />
+
+        </LinearLayout>
+
+        <!-- Document Card 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_content_card">
+
+            <TextView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:gravity="center"
+                android:text="🏢"
+                android:textSize="27sp"
+                android:background="@drawable/bg_icon_box" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Company Documents"
+                    android:textColor="#2E2345"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Prepare documents requested by the internship company."
+                    android:textColor="#777080"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/checkbox_tint" />
+
+        </LinearLayout>
+
+        <!-- Important Reminder -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_tip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💡 Important Reminder"
+                android:textColor="#6C4AB6"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Check with your university and internship company to make sure you have prepared all required documents before starting your internship."
+                android:textColor="#5F566D"
+                android:textSize="14sp"
+                android:lineSpacingExtra="3dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

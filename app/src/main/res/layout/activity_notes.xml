@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Back Button -->
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="‹"
+            android:textColor="#002147"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Personal Notes"
+            android:textColor="#002147"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Keep your internship notes and important reminders"
+            android:textColor="#777777"
+            android:textSize="15sp" />
+
+        <!-- Add Note Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_content_card">
+
+            <!-- Card Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create New Note"
+                android:textColor="#002147"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <!-- Note Title -->
+            <EditText
+                android:id="@+id/etNoteTitle"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_note_input"
+                android:hint="Note title"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textColor="#002147"
+                android:textColorHint="#777777"
+                android:textSize="15sp" />
+
+            <!-- Note Content -->
+            <EditText
+                android:id="@+id/etNoteContent"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_note_input"
+                android:gravity="top"
+                android:hint="Write your note here..."
+                android:inputType="textMultiLine"
+                android:padding="14dp"
+                android:textColor="#002147"
+                android:textColorHint="#777777"
+                android:textSize="15sp" />
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/btnSaveNote"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_purple_button"
+                android:text="Save Note"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Saved Notes Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Saved Notes"
+            android:textColor="#002147"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <!-- Notes Container -->
+        <LinearLayout
+            android:id="@+id/notesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical" />
+
+        <!-- Bottom Tip -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_tip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💡 Tip"
+                android:textColor="#ED1C24"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Use Personal Notes to record important internship dates, interview reminders, company information and other useful details."
+                android:textColor="#555555"
+                android:textSize="14sp"
+                android:lineSpacingExtra="3dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

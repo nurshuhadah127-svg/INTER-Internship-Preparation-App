@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+
+        <!-- ========================= -->
+        <!-- BACK BUTTON -->
+        <!-- ========================= -->
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="‹"
+            android:textColor="#002147"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+        <!-- ========================= -->
+        <!-- TITLE -->
+        <!-- ========================= -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Edit Profile"
+            android:textColor="#002147"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <!-- ========================= -->
+        <!-- SUBTITLE -->
+        <!-- ========================= -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Update your profile information"
+            android:textColor="#777777"
+            android:textSize="13sp" />
+
+
+        <!-- ========================= -->
+        <!-- FORM CARD -->
+        <!-- ========================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_profile_card"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+
+            <!-- FULL NAME -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textColor="#002147"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etEditName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_note_input"
+                android:hint="Enter your full name"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#002147"
+                android:textColorHint="#999999"
+                android:textSize="14sp" />
+
+
+            <!-- STUDENT ID -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Student ID"
+                android:textColor="#002147"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etEditStudentId"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_note_input"
+                android:hint="Enter your Student ID"
+                android:inputType="text"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#002147"
+                android:textColorHint="#999999"
+                android:textSize="14sp" />
+
+
+            <!-- EMAIL -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Email"
+                android:textColor="#002147"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etEditEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_note_input"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#002147"
+                android:textColorHint="#999999"
+                android:textSize="14sp" />
+
+
+            <!-- NEW PASSWORD -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="New Password"
+                android:textColor="#002147"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etEditPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_note_input"
+                android:hint="Leave blank to keep current password"
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#002147"
+                android:textColorHint="#999999"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <!-- ========================= -->
+        <!-- SAVE CHANGES -->
+        <!-- ========================= -->
+
+        <Button
+            android:id="@+id/btnSaveChanges"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#ED1C24"
+            android:text="Save Changes"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <!-- ========================= -->
+        <!-- CANCEL -->
+        <!-- ========================= -->
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="#002147"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</ScrollView>

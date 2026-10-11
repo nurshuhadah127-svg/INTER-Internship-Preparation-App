@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <!-- Greeting -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvWelcome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hello, Shuhadah 👋"
+                        android:textColor="@color/navy_primary"
+                        android:textSize="22sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tvSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FCOM Student"
+                        android:textColor="@color/gray"
+                        android:textSize="13sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:text="👩🏻"
+                    android:textSize="30sp"
+                    android:background="@drawable/bg_avatar"/>
+
+            </LinearLayout>
+
+
+            <!-- Search -->
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="18dp"
+                android:hint="Search something..."
+                android:background="@drawable/bg_search_red"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:textSize="14sp"/>
+
+
+            <!-- Main Banner -->
+
+            <LinearLayout
+                android:id="@+id/cardPreparation"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_dashboard_banner"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="Get Ready for\nYour Industrial Training"
+                    android:textColor="@color/white"
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plan • Prepare • Succeed"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+
+            <!-- Row 1 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:id="@+id/cardAnnouncements"
+                    style="@style/DashboardSmallCard"
+                    android:layout_marginEnd="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🔔"
+                        android:textSize="26sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Announcements"
+                        android:textColor="@color/navy_primary"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:includeFontPadding="false"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/cardDownloads"
+                    style="@style/DashboardSmallCard"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📄"
+                        android:textSize="26sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Forms &amp; Brochures"
+                        android:textColor="@color/navy_primary"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/cardUsefulLinks"
+                    style="@style/DashboardSmallCard"
+                    android:layout_marginStart="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🔗"
+                        android:textSize="26sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Useful Links"
+                        android:textColor="@color/navy_primary"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- Row 2 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="14dp">
+
+                <LinearLayout
+                    android:id="@+id/cardChecklist"
+                    style="@style/DashboardSmallCard"
+                    android:layout_marginEnd="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="☑"
+                        android:textColor="@color/navy_primary"
+                        android:textSize="28sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Checklist"
+                        android:textColor="@color/navy_primary"
+                        android:textSize="12sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/cardNotes"
+                    style="@style/DashboardSmallCard"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📝"
+                        android:textSize="26sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Personal Notes"
+                        android:textColor="@color/navy_primary"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/cardResources"
+                    style="@style/DashboardSmallCard"
+                    android:layout_marginStart="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📚"
+                        android:textSize="26sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Resources"
+                        android:textColor="@color/navy_primary"
+                        android:textSize="12sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- Bottom Navigation -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/white"
+        android:elevation="8dp">
+
+        <LinearLayout
+            android:id="@+id/navHome"
+            style="@style/BottomNavItem">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⌂"
+                android:textColor="@color/red_primary"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="@color/red_primary"
+                android:textSize="11sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/navAnnouncements"
+            style="@style/BottomNavItem">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔔"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Announcements"
+                android:textColor="@color/gray"
+                android:textSize="9sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/navDocuments"
+            style="@style/BottomNavItem">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📄"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Documents"
+                android:textColor="@color/gray"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/navMore"
+            style="@style/BottomNavItem">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="☷"
+                android:textColor="@color/gray"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More"
+                android:textColor="@color/gray"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

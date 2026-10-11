@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F5FF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Back Button -->
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="‹"
+            android:textColor="#6C4AB6"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Useful Links"
+            android:textColor="#2E2345"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Helpful websites and resources for your internship"
+            android:textColor="#777080"
+            android:textSize="15sp" />
+
+        <!-- Link 1 -->
+        <LinearLayout
+            android:id="@+id/cardUptm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_content_card">
+
+            <TextView
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:gravity="center"
+                android:text="🎓"
+                android:textSize="28sp"
+                android:background="@drawable/bg_icon_box" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="UPTM Official Website"
+                    android:textColor="#2E2345"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="University information, announcements and student resources."
+                    android:textColor="#777080"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btnUptm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Open Link"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:background="@drawable/bg_purple_button" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Link 2 -->
+        <LinearLayout
+            android:id="@+id/cardJobstreet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_content_card">
+
+            <TextView
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:gravity="center"
+                android:text="💼"
+                android:textSize="28sp"
+                android:background="@drawable/bg_icon_box" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Internship Job Portal"
+                    android:textColor="#2E2345"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Search for internship opportunities and available positions."
+                    android:textColor="#777080"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btnJobstreet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Open Link"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:background="@drawable/bg_purple_button" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Link 3 -->
+        <LinearLayout
+            android:id="@+id/cardLinkedin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_content_card">
+
+            <TextView
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:gravity="center"
+                android:text="🔗"
+                android:textSize="28sp"
+                android:background="@drawable/bg_icon_box" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LinkedIn"
+                    android:textColor="#2E2345"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Build your professional profile and explore career opportunities."
+                    android:textColor="#777080"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btnLinkedin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Open Link"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:background="@drawable/bg_purple_button" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Link 4 -->
+        <LinearLayout
+            android:id="@+id/cardMyfuturejobs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_content_card">
+
+            <TextView
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:gravity="center"
+                android:text="📋"
+                android:textSize="28sp"
+                android:background="@drawable/bg_icon_box" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MYFutureJobs"
+                    android:textColor="#2E2345"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Explore career services, job opportunities and employment resources."
+                    android:textColor="#777080"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btnMyfuturejobs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Open Link"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:background="@drawable/bg_purple_button" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Bottom Tip -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_tip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💡 Tip"
+                android:textColor="#6C4AB6"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Always check the official website or company page for the latest internship information."
+                android:textColor="#5F566D"
+                android:textSize="14sp"
+                android:lineSpacingExtra="3dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

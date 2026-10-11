@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- BACK BUTTON -->
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="‹"
+            android:textColor="#002147"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"/>
+
+
+        <!-- PAGE TITLE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Announcements"
+            android:textColor="#002147"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Post and manage announcements for students"
+            android:textColor="#777777"
+            android:textSize="13sp"/>
+
+
+        <!-- ADD ANNOUNCEMENT BUTTON -->
+
+        <Button
+            android:id="@+id/btnAddAnnouncement"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="#ED1C24"
+            android:text="+  Add Announcement"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+
+        <!-- ANNOUNCEMENT LIST -->
+
+        <LinearLayout
+            android:id="@+id/announcementContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical"/>
+
+
+        <!-- BOTTOM SPACE -->
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

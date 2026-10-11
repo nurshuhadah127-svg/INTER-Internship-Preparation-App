@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- BACK -->
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="‹"
+            android:textColor="#002147"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Student Information"
+            android:textColor="#002147"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="View registered student information"
+            android:textColor="#777777"
+            android:textSize="13sp" />
+
+        <!-- PROFILE CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/bg_admin_card"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- ICON -->
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_admin_icon"
+                android:gravity="center"
+                android:text="👤"
+                android:textSize="32sp" />
+
+            <!-- NAME LABEL -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="Full Name"
+                android:textColor="#777777"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvStudentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Student Name"
+                android:textColor="#002147"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <!-- STUDENT ID -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Student ID"
+                android:textColor="#777777"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvStudentId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="AM00000000"
+                android:textColor="#002147"
+                android:textSize="15sp" />
+
+            <!-- EMAIL -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Email"
+                android:textColor="#777777"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvStudentEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="student@email.com"
+                android:textColor="#002147"
+                android:textSize="15sp" />
+
+            <!-- ROLE -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Role"
+                android:textColor="#777777"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvStudentRole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Student"
+                android:textColor="#ED1C24"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- CLOSE BUTTON -->
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="#002147"
+            android:text="Back to Students"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

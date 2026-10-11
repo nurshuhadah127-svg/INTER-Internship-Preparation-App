@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F5FF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="25dp">
+
+
+        <!-- ================= TOP BAR ================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/btnBack"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:text="‹"
+                android:textColor="#17134F"
+                android:textSize="34sp"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+
+        <!-- ================= TITLE ================= -->
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resume &amp; Cover Letter"
+            android:textColor="#17134F"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp" />
+
+
+        <!-- ================= SUBTITLE ================= -->
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Learn how to prepare professional documents for your internship application."
+            android:textColor="#625E78"
+            android:textSize="12sp"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="18dp" />
+
+
+        <!-- ================================================= -->
+        <!-- RESUME GUIDE CARD -->
+        <!-- ================================================= -->
+
+        <LinearLayout
+            android:id="@+id/cardResumeGuide"
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="14dp"
+            android:background="@drawable/bg_content_card">
+
+            <!-- Icon -->
+
+            <LinearLayout
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/bg_icon_box"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="▤"
+                    android:textColor="#6242C5"
+                    android:textSize="29sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <!-- Content -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Resume Guide"
+                    android:textColor="#17134F"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tips, format and examples for writing a professional resume."
+                    android:textColor="#625E78"
+                    android:textSize="10sp"
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginTop="4dp" />
+
+                <Button
+                    android:id="@+id/btnResumeGuide"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:text="View Guide  →"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/bg_purple_button"
+                    android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- ================================================= -->
+        <!-- COVER LETTER GUIDE CARD -->
+        <!-- ================================================= -->
+
+        <LinearLayout
+            android:id="@+id/cardCoverLetterGuide"
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="14dp"
+            android:background="@drawable/bg_content_card"
+            android:layout_marginTop="14dp">
+
+            <!-- Icon -->
+
+            <LinearLayout
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/bg_icon_box"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✉"
+                    android:textColor="#6242C5"
+                    android:textSize="28sp" />
+
+            </LinearLayout>
+
+
+            <!-- Content -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cover Letter Guide"
+                    android:textColor="#17134F"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Learn what to include in your cover letter with examples."
+                    android:textColor="#625E78"
+                    android:textSize="10sp"
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginTop="4dp" />
+
+                <Button
+                    android:id="@+id/btnCoverLetterGuide"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:text="View Guide  →"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/bg_purple_button"
+                    android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- ================================================= -->
+        <!-- ADDITIONAL RESOURCES -->
+        <!-- ================================================= -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Additional Resources"
+            android:textColor="#17134F"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="9dp" />
+
+
+        <!-- ================================================= -->
+        <!-- RESUME TEMPLATE -->
+        <!-- ================================================= -->
+
+        <LinearLayout
+            android:id="@+id/cardResumeTemplate"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/bg_resource_card">
+
+            <LinearLayout
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/bg_icon_small"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="▤"
+                    android:textColor="#6242C5"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Resume Template"
+                    android:textColor="#29234C"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Download sample template"
+                    android:textColor="#777286"
+                    android:textSize="9sp"
+                    android:layout_marginTop="2dp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/btnDownloadResume"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:text="↓"
+                android:textColor="#6242C5"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+
+        <!-- ================================================= -->
+        <!-- COVER LETTER TEMPLATE -->
+        <!-- ================================================= -->
+
+        <LinearLayout
+            android:id="@+id/cardCoverLetterTemplate"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/bg_resource_card"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/bg_icon_small"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✉"
+                    android:textColor="#6242C5"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cover Letter Template"
+                    android:textColor="#29234C"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Download sample template"
+                    android:textColor="#777286"
+                    android:textSize="9sp"
+                    android:layout_marginTop="2dp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/btnDownloadCoverLetter"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:text="↓"
+                android:textColor="#6242C5"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

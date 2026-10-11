@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7F8FA">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- BACK -->
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="‹"
+            android:textColor="#002147"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="View Students"
+            android:textColor="#002147"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- SUBTITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="View registered students and manage accounts"
+            android:textColor="#777777"
+            android:textSize="13sp" />
+
+        <!-- SEARCH -->
+        <EditText
+            android:id="@+id/etSearchStudent"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_document_search"
+            android:hint="⌕  Search students..."
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textColor="#002147"
+            android:textColorHint="#999999"
+            android:textSize="13sp"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <!-- STUDENT LIST -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/studentsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="20dp" />
+
+    </ScrollView>
+
+</LinearLayout>

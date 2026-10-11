@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- HEADER -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome, Admin 👋"
+                    android:textColor="#002147"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Internship Management System"
+                    android:textColor="#777777"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- ANNOUNCEMENTS -->
+
+        <LinearLayout
+            android:id="@+id/cardAnnouncements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="14dp"
+            android:background="@drawable/bg_admin_card"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="📢"
+                android:textSize="24sp"
+                android:background="@drawable/bg_admin_icon"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="13dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manage Announcements"
+                    android:textColor="#002147"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Post and manage announcements for students"
+                    android:textColor="#777777"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="›"
+                android:textColor="#ED1C24"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <!-- RESOURCES -->
+
+        <LinearLayout
+            android:id="@+id/cardResources"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="14dp"
+            android:background="@drawable/bg_admin_card"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="📚"
+                android:textSize="24sp"
+                android:background="@drawable/bg_admin_icon"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="13dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manage Resources"
+                    android:textColor="#002147"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Manage guides and preparation materials"
+                    android:textColor="#777777"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="›"
+                android:textColor="#ED1C24"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <!-- DOCUMENTS -->
+
+        <LinearLayout
+            android:id="@+id/cardDocuments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="14dp"
+            android:background="@drawable/bg_admin_card"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="📁"
+                android:textSize="24sp"
+                android:background="@drawable/bg_admin_icon"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="13dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manage Documents"
+                    android:textColor="#002147"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Upload and manage forms and brochures"
+                    android:textColor="#777777"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="›"
+                android:textColor="#ED1C24"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <!-- USEFUL LINKS -->
+
+        <LinearLayout
+            android:id="@+id/cardUsefulLinks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="14dp"
+            android:background="@drawable/bg_admin_card"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="🔗"
+                android:textSize="24sp"
+                android:background="@drawable/bg_admin_icon"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="13dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manage Useful Links"
+                    android:textColor="#002147"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Add or update useful internship links"
+                    android:textColor="#777777"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="›"
+                android:textColor="#ED1C24"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <!-- STUDENTS -->
+
+        <LinearLayout
+            android:id="@+id/cardStudents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="14dp"
+            android:background="@drawable/bg_admin_card"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="👥"
+                android:textSize="24sp"
+                android:background="@drawable/bg_admin_icon"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="13dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View Students"
+                    android:textColor="#002147"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="View registered students and manage accounts"
+                    android:textColor="#777777"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="›"
+                android:textColor="#ED1C24"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <!-- LOGOUT -->
+
+        <Button
+            android:id="@+id/btnAdminLogout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/bg_admin_logout"
+            android:text="⇥  Logout"
+            android:textAllCaps="false"
+            android:textColor="#ED1C24"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</ScrollView>

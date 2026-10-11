@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7F8FA">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        android:paddingStart="12dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="‹"
+            android:textColor="#002147"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Placement Documents"
+                android:textColor="#002147"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select document type"
+                android:textColor="#777777"
+                android:textSize="11sp"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Document Type"
+                android:textColor="#002147"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <!-- General Placement Documents -->
+
+            <LinearLayout
+                android:id="@+id/cardGeneral"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/bg_program_card"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="General Placement Documents"
+                    android:textColor="#002147"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Documents for all students"
+                    android:textColor="#777777"
+                    android:textSize="11sp"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+
+
+            <!-- CC101 -->
+
+            <LinearLayout
+                android:id="@+id/cardCC101"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/bg_program_card"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CC101"
+                    android:textColor="#002147"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Placement documents for CC101 students"
+                    android:textColor="#777777"
+                    android:textSize="11sp"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+
+
+            <!-- CM201 -->
+
+            <LinearLayout
+                android:id="@+id/cardCM201"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/bg_program_card"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CM201"
+                    android:textColor="#002147"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Placement documents for CM201 students"
+                    android:textColor="#777777"
+                    android:textSize="11sp"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+
+
+            <!-- CT204 -->
+
+            <LinearLayout
+                android:id="@+id/cardCT204"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/bg_program_card"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CT204"
+                    android:textColor="#002147"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Placement documents for CT204 students"
+                    android:textColor="#777777"
+                    android:textSize="11sp"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+
+
+            <!-- CT206 -->
+
+            <LinearLayout
+                android:id="@+id/cardCT206"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/bg_program_card"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CT206"
+                    android:textColor="#002147"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Placement documents for CT206 students"
+                    android:textColor="#777777"
+                    android:textSize="11sp"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
